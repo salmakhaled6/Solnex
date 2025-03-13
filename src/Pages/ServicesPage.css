@@ -1,0 +1,145 @@
+.service-page {
+    background-color: #12151F;
+}
+
+.servicePage-carousl {
+    background: linear-gradient(to right, rgba(187, 229, 54, 0.6), rgba(0, 0, 0, 0.8)), 
+    url(https://s3-alpha-sig.figma.com/img/603d/ca62/933237073924eba598b12cbd243729d0?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=q3JcdrS5FR-G9dVDlGFVeDqdPW7gsqHNFAbmRjuyuNSysCWWvCuAn3L4nX9W4FdKZ9ZGGWjcx0GL4IYSCWRwuaF7oeF97jIeEpN4Oncg53pjST0nZoHb4ywuEAvOceDLHbKoeDeJQOOll~u1dKwcbbzep8scvTr9bZLP1-nvrc9HDhJKCJk0jrMLDrDk120MaQIn~r9NUvXPscLjzDXou2bkpk8zGPRA8cqWZL3BG405VYmU6iyFh3g47hkrTX-uG6NsavMbI4JpIiR9VkMG1z260YGJiaAUc08qv-3Nan4t0MymxZSgUWzke~LOsa3pdlBlqQIwBNISKKBQXZzesw__);
+    background-size: cover;
+    background-position: center;
+    height: 592px;
+    border-bottom-left-radius: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.servicePage-carousl h2 {
+    color: #F0F0F0;
+    font-weight: 700;
+    font-size: 48px;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 2px;
+    animation: slideInRight 0.5s ease-out;
+    text-align: center;
+}
+
+.servicePage-cards {
+    padding: 60px 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.servicepage-card {
+    background-color: #2D2E32;
+    text-align: center;
+    padding: 10px;
+    border-radius: 16px;
+    cursor: pointer;
+    
+    transition: border 0.3s ease, transform 0.3s ease;
+}
+.servicepage-card svg{
+    width: 100%;
+}
+
+.servicepage-card:hover {
+    border: 1px solid #BBE536;
+    transform: translateY(-5px);
+}
+
+.service-card-heading {
+    color: #BBE536;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
+    padding: 10px;
+}
+
+.servicepage-card p {
+    font-size: 14px;
+    text-align: right;
+    font-weight: 500;
+    padding: 10px;
+    color: #FAFEE7;
+}
+
+.servicepage-card button {
+    background-color: #2D2E32;
+    border: 1px solid #BBE536;
+    color: #FAFEE7;
+    border-radius: 8px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.servicepage-card button:hover {
+    background-color: #BBE536;
+    color: #12151F;
+}
+
+
+@media (max-width: 992px) {
+    .servicePage-carousl {
+        height: 400px;
+        border-bottom-left-radius: 200px;
+    }
+    .servicePage-carousl h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .servicePage-carousl {
+        height: 300px;
+        border-bottom-left-radius: 100px;
+        padding: 10px;
+    }
+    .servicePage-carousl h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .servicePage-carousl {
+        height: 250px;
+    }
+    .servicePage-carousl h2 {
+        font-size: 24px;
+    }
+    .servicepage-card p {
+        font-size: 12px;
+    }
+    .servicepage-card button {
+        padding: 8px 20px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
