@@ -11,8 +11,12 @@ import Jobs from './Components/Jobs'
 import ImageSlider from './Components/ImageSlider'
 import Footer from './Components/Footer'
 import ContactForm from './Pages/ContactForm'
-import ServicesPage from './Pages/ServicesPage'
+// import ServicesPage from './Pages/ServicesPage'
 import HomePage from './Pages/HomePage'
+import ProjectDetails from './Pages/ProjectDetails'
+import ContactUs from './Pages/ContactUs'
+import OurProjects from './Pages/OurProjects'
+import ServiceDetails from './Pages/ServiceDetails'
 
 function App() {
 
@@ -26,11 +30,14 @@ function App() {
       <Jobs />
       <ImageSlider />
       <Footer /> */}
-     
+   
       <HomePage />
-      <ServicesPage />
-      <ContactForm />
+      <ServiceDetails />
+      <ContactForm /> 
+      <ProjectDetails />
+       <ContactUs />
       
+      <OurProjects />
      
     </>
   )

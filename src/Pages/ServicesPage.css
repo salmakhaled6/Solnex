@@ -1,4 +1,4 @@
-.service-page {
+ .service-page {
     background-color: #12151F;
 }
 
@@ -142,4 +142,5 @@
         transform: translateX(0);
         opacity: 1;
     }
-}
+} 
+
