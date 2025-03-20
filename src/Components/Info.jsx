@@ -3,7 +3,7 @@ import React from 'react'
 function Info() {
   return (
     <div className='info-box'>
-<img src="https://media.istockphoto.com/id/1306704388/photo/the-photographer.jpg?s=612x612&w=0&k=20&c=awoiSLOA22QtH_-4oC_sZphhExbANjc5t73JMM1NZ40=" alt="" />   <div className="info-content">
+<img src="https://media.istockphoto.com/id/1364218098/photo/biometric-identification-fingerprint-scanner-with-futuristic-digital-processing-for-access-to.jpg?s=612x612&w=0&k=20&c=LmlsGcne-TCDyXXyySMTqTLKmg9q7JkRTH_SmztQzLA=" />   <div className="info-content">
         
         <h2>من نحن </h2>
         <p>نحن Solnex، بيت التقنية الذي يصنع الحلول الذكية للمستقبل!</p>

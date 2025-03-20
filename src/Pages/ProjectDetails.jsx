@@ -1,4 +1,5 @@
 import React from "react";
+import './projectDetails.css'
 
 function ProjectDetails() {
   return (

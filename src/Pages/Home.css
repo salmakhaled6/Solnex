@@ -14,20 +14,30 @@
     margin: 0 auto; 
     flex-wrap: wrap; 
 }
+
+  .help-button a {
+    text-decoration: none; 
+    color: inherit; 
+  }
+  
   .help-button {
     background-color: #BBE536;
     color: #12151F;
     padding: 10px 20px;
-    border: none;
+    border: 1px solid transparent; 
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
-  }
-  
-  .help-button:hover {
-    background-color: #b2de22;
-    color: #333;
-  }
+}
+
+.help-button:hover {
+    background-color: #12151F;
+    color: #bbe536;
+    border: 1px solid #BBE536; 
+    box-shadow: 0 0 10px 5px rgba(187, 229, 54, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
   
   .nav-links {
     list-style: none;
@@ -103,7 +113,7 @@
     
   } */
   .carousl {
-    background-image: url('assets/down.png');
+    background-image: url('pic.png');
     /* background-size: cover; */
     background-position: center;
     display: flex;
@@ -139,6 +149,30 @@
   .expert-box{
     width: 100%;
   }
+ 
+  .experts-big-box{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   /* margin-bottom: 30px; */
+  }
+  .experts {
+    color: #BBE536;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+    width: 100%;
+  }
+  .expert-container{
+    max-width: 600px !important;
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px 5px rgba(187, 229, 54, 0.2) !important; 
+
+  }
+  .logo-slider{
+    width: 100%;
+  }
   
   h2 {
     display: flex;
@@ -170,9 +204,17 @@
     margin-top: 10px;
     transition: background-color 0.3s ease;
   }
+  .contact-btn a{
+    text-decoration: none;
+    color: inherit; 
+
+  }
   
   .contact-btn:hover {
-    background-color: #a4cc32;
+    background-color: #12151F;
+    box-shadow: 0 0 10px 5px rgba(187, 229, 54, 0.5); 
+    transition: all 0.3s ease-in-out; 
+    color: #BBE536;
   }
   .info-box{
     display: flex;
@@ -250,6 +292,9 @@
   
   .info-button:hover {
     background: #b2de22;
+    color: #12151F;
+    box-shadow: 0 0 10px 5px rgba(187, 229, 54, 0.2); 
+
   }
   @media (max-width: 768px) {
     .info-box{
@@ -261,7 +306,15 @@
   }
   
   @media (max-width: 480px) {
-  
+  .expert-box{
+    display: none;
+  }
+  .carousl-heading svg{
+    display: none;
+  }
+  .slider-box{
+    display: none;
+  }
   }
   
   .service-box{
@@ -298,8 +351,8 @@
   }
   
   .card:hover {
-    transform: translateY(-10px); 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-10px) !important; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important; 
   }
   
   .card img {
@@ -502,6 +555,14 @@
   
   
    }
+   .rpc-next-btn:hover{
+background-color: #BBE536 !important;
+color: #12151F !important;
+   }
+   .rpc-prev-btn:hover{
+    background-color: #BBE536 !important;
+color: #12151F !important;
+   }
    .rpc-content-item {
   border-radius: 24px;
   height: 348px
@@ -584,7 +645,7 @@
     align-items: center;
     gap: 30px; 
     animation: swing 8s linear infinite alternate;
-    min-width: fit-content;
+    /* min-width: fit-content; */
   }
   
   .logo-slider img {

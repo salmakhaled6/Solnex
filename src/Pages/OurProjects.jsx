@@ -1,9 +1,20 @@
 import React from 'react'
+import NavBar from '../Components/NavBar'
+import { useEffect } from "react";
+import Footer from '../Components/Footer';
+import './Projects.css';
+
 
 function OurProjects() {
+  useEffect(() => {
+    console.log("ourprojects page loaded");
+  }, []);
   return (
+  
     <div className='ProjectsPage'>
+          <NavBar />
        <div className="OurProjects-carousl">
+    
         <h2>أعمالنا</h2>
 
       </div>
@@ -18,6 +29,7 @@ function OurProjects() {
        <img src="https://s3-alpha-sig.figma.com/img/0f13/1084/c3a622230abab624da3708b73cacbcc7?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VL38yr5vL-sNEhWYjP-AZrgZF7jM5pPi8HH~eK85HCq49dmLEgg~lGNgjVdQygQsQPTXj5OjHz~NAdjJytlOwNv-Tjco1~i8tJhmXhk~sNK3MeWSfv8rPiUXtz0SmEe84Roe1fLoBBseb6waL0oXk76zJU7TM2DziUUayxL38rU-Z6RSimFdqpxphUmvlGQgQly0i-sQ52Ptz93ngGZmSTRGYigT72wCInfGgzaSrova8OaMOJK8k1q21Gw95XZvg0HhoF-vBF-per4Oz~WG4l2wy9YgePzPkMIR0RE23gPC7zGXoCY5UnX0O78Dn6792ExPHhhGcUANcjoU45wULw__" alt="" />
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

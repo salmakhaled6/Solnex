@@ -17,27 +17,40 @@ import ProjectDetails from './Pages/ProjectDetails'
 import ContactUs from './Pages/ContactUs'
 import OurProjects from './Pages/OurProjects'
 import ServiceDetails from './Pages/ServiceDetails'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 function App() {
 
   return (
     <>
-      {/* <NavBar />
-      <Carousl />
-      <Info />
-      <Services />
-      <PartFour />
-      <Jobs />
-      <ImageSlider />
-      <Footer /> */}
-   
+  
+      <Router>
+    
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/services" element={<ServiceDetails />} />
+        <Route path="/Project" element={<ProjectDetails />} />
+        <Route path="/work" element={<OurProjects />} />
+        <Route path="/info" element={<OurProjects />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path ='/contact-us' element={<ContactForm />}/>
+
+
+
+        
+
+        
+      </Routes>
+    </Router>
+{/*    
       <HomePage />
       <ServiceDetails />
       <ContactForm /> 
       <ProjectDetails />
        <ContactUs />
       
-      <OurProjects />
+      <OurProjects /> */}
      
     </>
   )

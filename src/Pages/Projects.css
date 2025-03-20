@@ -1,0 +1,116 @@
+.ProjectsPage {
+    background-color: #12151F;
+}
+
+.OurProjects-carousl {
+    background: linear-gradient(to right, rgba(187, 229, 54, 0.6), rgba(0, 0, 0, 0.8)), 
+    url(https://s3-alpha-sig.figma.com/img/a7ba/abea/3e5e2813c2184ff2cabadbe79a76e479?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=AZ4sfJzUScwIt2klqufRBJP0F~L7c1464ie8ttqAdc9fGOSW-l8H8O0ZUcS4b6Ib~6rHyTQkAs-tmpthgeaTLclj234y-WXS89JIMRcRKGcT~pxO2vZWoQTZpH9l0rbg9QLe8l~mn8W8Lb8rho41AynXnXg04jtrVCzG3tXeL2PtFlKEHgUOVWWO2-yir1fJFREm~q6c6c1daT9O7NyQkNfhnDedcJjg6tOVyMVE-Da4Nnews9VVDDccVmduNq5WmBq58PJLg8yMpha1lFF95iFi0YL5fP98Bdk1PsR5vg3d-XmbrrBrsA6QJcCgeYayBagvA59867O2b~2qQft4jA__);
+    background-size: cover;
+    background-position: center;
+    height: 592px;
+    border-bottom-left-radius: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.OurProjects-box {
+    padding: 30px 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.button-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.button-container button {
+    background-color: #BBE536;
+    border-radius: 16px;
+    padding: 10px 40px;
+    border: none;
+    color: #12151F;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #84a223;
+}
+
+.OurProjects-carousl h2 {
+    color: #F0F0F0;
+    font-size: 48px;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.OurProjects-carousl h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 120%; 
+    height: 3px;
+    background-color: #F0F0F0;
+}
+
+.OurProjects-carousl h2::before {
+    content: "";
+    position: absolute;
+    right: -30px; 
+    bottom: -3px;
+    width: 10px; 
+    height: 10px;
+    background-color: #F0F0F0;
+}
+
+.OurProjects-imgbox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    gap: 10px;
+}
+
+.OurProjects-imgbox img {
+    width: 100%; 
+    border-radius: 16px;
+    height: auto;
+}
+
+.nav-links a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+@media (max-width: 1024px) {
+    .OurProjects-imgbox {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .OurProjects-carousl h2 {
+        font-size: 36px;
+    }
+
+    .button-container button {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .OurProjects-imgbox {
+        grid-template-columns: 1fr; 
+    }
+
+    .OurProjects-carousl h2 {
+        font-size: 28px; }}
+
+
+

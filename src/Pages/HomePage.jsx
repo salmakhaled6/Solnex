@@ -8,11 +8,16 @@ import NavBar from '../Components/NavBar'
 import PartFour from '../Components/PartFour'
 import Services from '../Components/Services'
 import './Home.css'
+import { useEffect } from "react";
+
 
 function HomePage() {
+  useEffect(() => {
+    console.log("Home page loaded");
+  }, []);
   return (
     <div>
-        <NavBar />
+      <NavBar />
       <Carousl />
       <Info/>
       <Services />
