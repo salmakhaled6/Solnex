@@ -172,7 +172,7 @@
     border: 1px solid #bbe536;
   }
   
-  /* Custom Checkmark */
+
   .contact-checkbox input:checked::after {
     content: "";
     position: absolute;
