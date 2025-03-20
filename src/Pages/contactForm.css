@@ -121,7 +121,7 @@
 }
 .send {
     background-color: #BBE536 !important;
-    border: 1px solid #BBE536 !important; /* Ensure border is always there */
+    border: 1px solid #BBE536 !important; 
     color: #080906 !important;
 }
 
