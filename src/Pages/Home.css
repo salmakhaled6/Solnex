@@ -79,6 +79,11 @@
     font-weight: bold;
     text-align: center;
   }
+  .nav-links li.active a {
+
+    color: #b2de22;
+  }
+  
   
   @media (max-width: 768px) {
     .navbar {

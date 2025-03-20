@@ -13,6 +13,7 @@
 
 .contact-form {
     direction: rtl;
+    box-shadow: none;
 }
 
 .contact-page-details {
@@ -104,11 +105,7 @@
 
 
 
-.send {
-    background-color: #BBE536 !important;
-    border: none !important;
-    color: #080906 !important;
-}
+
 .form-buttons button {
     background-color: #12151F;
     padding: 10px 80px;
@@ -121,8 +118,18 @@
 .form-buttons button:hover {
     background-color: #BBE536;
     color: #12151F;
-    border: 1px solid #BBE536; 
 }
+.send {
+    background-color: #BBE536 !important;
+    border: 1px solid #BBE536 !important; /* Ensure border is always there */
+    color: #080906 !important;
+}
+
+.send:hover {
+    background-color: transparent !important;
+    color: #FFFFFF !important;
+}
+
 
 .form-buttons button:active {
     transform: scale(0.98); 
