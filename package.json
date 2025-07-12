@@ -10,9 +10,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "aos": "^2.3.4",
+    "framer-motion": "^12.7.4",
+    "gsap": "^3.12.7",
+    "install": "^0.13.0",
+    "intersection-observer": "^0.12.2",
+    "npm": "^11.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
     "react-pretty-carousel": "^1.0.19",
+    "react-router-dom": "^7.4.1",
+    "react-scroll": "^1.9.3",
     "react-slideshow-image": "^4.3.2"
   },
   "devDependencies": {

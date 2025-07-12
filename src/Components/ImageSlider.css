@@ -1,0 +1,151 @@
+.slider-box {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #f8f8f8; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .slider-container {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: slide 30s linear infinite;
+  }
+  
+  .slider-image {
+    flex: 0 0 auto;
+    width: 350px;
+    padding: 20px; 
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider-image img {
+    width: 300px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 12px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .slider-image img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .slider-container:hover {
+    animation-play-state: paused;
+  }
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  .image-wrapper:hover img {
+    transform: scale(1.05);
+    filter: brightness(50%);
+  }
+  
+  .image-wrapper:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+  }
+  
+  /* .view-button {
+    padding: 10px 20px;
+    background-color:#BBE536;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .view-button:hover {
+    background-color: transparent;
+    color: #f8f8f8;
+    border: 1px solid #BBE536;
+  } */
+
+  .btns-container-5 {
+    position: relative;
+  
+  padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.5s;
+    letter-spacing: 1px;
+  }
+  .btns-container-5 button {
+  
+    padding: 15px 25px;
+  
+    font-size: 14px;
+  
+    background-color: #bbe536;
+    -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    -webkit-mask-size: 2300% 100%;
+    mask-size: 2300% 100%;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    color: #12151f;
+    line-height: 100%;
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(22) forwards;
+    animation: ani2 0.7s steps(22) forwards;
+  }
+  .btns-container-5 button:hover {
+    -webkit-animation: ani 0.7s steps(22) forwards;
+    animation: ani 0.7s steps(22) forwards;
+  }
+  .btn-mask-5 {
+    border-radius: 8px;
+  
+    position: absolute;
+    border: 1px solid #bbe536;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fafee7;
+    padding: 12px 19px;
+  
+  }
+  
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

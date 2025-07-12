@@ -4,6 +4,9 @@ import { useEffect } from "react";
 import Footer from '../Components/Footer';
 import './contactForm.css';
 
+import pic from "../assets/images/contact.gif"
+
+
 
 function ContactUs() {
   useEffect(() => {
@@ -20,6 +23,9 @@ function ContactUs() {
         <label htmlFor='name'>الأسم</label>
         <input type='text' id='name' placeholder='أدخل أسمك' />
 
+        <label htmlFor='name'>رقم الهاتف</label>
+        <input type='text' id='name' placeholder='رقم الهاتف' />
+
         <label htmlFor='email'>البريد الألكترونى</label>
         <input type='email' id='email' placeholder='أدخل بريدك الإلكتروني' />
 
@@ -30,7 +36,7 @@ function ContactUs() {
           <button type='button'>تقييم</button>
         </div>
 
-        <label htmlFor='message'>رسالة</label>
+        <label htmlFor='message'>الرساله</label>
         <textarea id='message' rows='1' placeholder='أدخل رسالتك'></textarea>
 
         <div className='form-buttons'>
@@ -41,8 +47,9 @@ function ContactUs() {
     </div>
 
     <div className='contact-page-details'>
-      <p className='contact-details-heading'>قم بأرسال استفسارك لنا</p>
-      <p>لا تتردد في التواصل معنا إذا كان لديك أي أسئلة أو تعليقات.</p>
+      <img src={pic} alt="" />
+<p className='contact-details-heading'>قم بأرسال استفسارك لنا</p>
+      <p className='contact-details-para'>لا تتردد في التواصل معنا إذا كان لديك أي أسئلة أو تعليقات</p>
     </div>
   </div>
   <Footer />

@@ -1,0 +1,208 @@
+.info-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 60px 80px;
+    border-top: 1px solid #a4cc32;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    background-color: #12151f;
+  }
+  
+  .info-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 21, 31, 0.9);
+    z-index: -1;
+  }
+  
+  .info-image {
+    width: 100%;
+    /* height: auto; */
+    border-radius: 8px;
+  }
+
+  .info-img, .info-content {
+    height: 300px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .info-box img:hover {
+    transform: translateY(-5px) rotate(-2deg);
+    box-shadow: 0 10px 25px rgba(187, 229, 54, 0.5);
+  }
+  .info-box img {
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: transparent;
+  }
+  .info-content {
+    flex: 1;
+    text-align: right;
+    direction: rtl;
+    /* padding: 10px 15px;  */
+    border-radius: 8px; 
+    color: white; 
+  }
+  
+  .info-content h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #bbe536;
+    font-weight: 600;
+    line-height: 100%;
+  }
+  
+  p {
+    font-size: 22px !important;
+    font-weight: 600;
+    color: #ffffff;
+  
+    line-height: 1.6;
+  }
+  .p2 {
+    font-size: 16px !important;
+    color: #ffffff;
+    padding-bottom: 25px !important;
+  }
+  .btns-container-2 {
+    position: relative;
+ 
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 200;
+    transition: 0.5s;
+    letter-spacing: 1px;
+  }
+  .btns-container-3 button {
+
+    padding: 10px 35px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #12151f;
+    background-color: #bbe536;
+    -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    -webkit-mask-size: 2300% 100%;
+    mask-size: 2300% 100%;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(22) forwards;
+    animation: ani2 0.7s steps(22) forwards;
+  }
+  .btns-container-3 button:hover {
+    -webkit-animation: ani 0.7s steps(22) forwards;
+    animation: ani 0.7s steps(22) forwards;
+  }
+  .btn-mask-3 {
+    border-radius: 8px;
+    position: absolute;
+    border: 1px solid #bbe536;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 9px 34px;
+
+  }
+  @media (max-width: 1024px) {
+    .info-box {
+      padding: 60px 60px;
+      gap: 18px;
+    }
+  
+    .info-box img {
+      max-width: 200px;
+      max-height: 200px;
+    }
+  
+    .info-content h2 {
+      font-size: 26px;
+    }
+  
+    .info-content p {
+      font-size: 18px !important;
+    }
+  
+    .info-content .p2 {
+      font-size: 14px !important;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .info-box {
+      padding: 60px 40px;
+      gap: 15px;
+    }
+  
+    .info-box img {
+      /* width: 200px;
+      height: 200px; */
+      display: none;
+    }
+  
+    .info-img, .info-content {
+      
+    }
+  
+    .info-content h2 {
+      font-size: 24px;
+    }
+  
+    .info-content p {
+      font-size: 16px !important;
+    }
+    .info-content .p2{
+      font-size: 12px !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .info-box {
+      padding: 20px;
+      gap: 10px;
+    }
+  
+    .info-box img {
+    
+      display: none;
+    }
+  
+    .info-content h2 {
+      font-size: 24px;
+    }
+  
+    .info-content p {
+      font-size: 14px !important;
+    }
+   .info-content .p2{
+      font-size: 12px !important;
+    }
+  
+    .btns-container-3 button {
+      padding: 8px 18px;
+      font-size: 16px;
+    }
+  
+    .btn-mask-3 {
+      padding: 7px 17px;
+      font-size: 16px;
+    }
+  }
+  
+  

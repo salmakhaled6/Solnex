@@ -1,19 +1,21 @@
 .ProjectDetails-page{
     background-color: #12151F;
-    padding: 60px 85px;
+    /* padding: 60px 85px; */
+   
 }
 .ProjectDetails-box1{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 60px 60px;
 }
 .ProjectDetails-box1 img{
     width: 500px;
     height: 375px;
 }
 .ProjectDetails-box1-details img{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 120px;
     border-radius: 50px;
 }
 .ProjectDetails-box1-details{
@@ -25,7 +27,7 @@ gap: 20px;
 .ProjectDetails-box1-details p{
     color: #FAFEE7;
     text-align: right;
-    font-size: 22px;
+    font-size: 16px !important;
     font-weight: 700;
 }
 .ProjectDetails-box1-details button {
@@ -35,9 +37,10 @@ gap: 20px;
     cursor: pointer;
     border: none;
     color: #FAFEE7;
+    font-size: 16px;
 }
 .ProjectDetails-box1-paragraph{
-    font-size: 12px !important;
+    font-size: 16px !important;
 }
 .ProjectDetails-box2 {
     display: flex;
@@ -64,6 +67,7 @@ gap: 20px;
     gap: 40px;
     text-align: right;
     width: 100%;
+
     
   
     
@@ -71,13 +75,16 @@ gap: 20px;
 .box3-details{
     direction: rtl;
     padding: 10px;
+
 }
 .box3-details p{
-    font-size: 24px;
+    font-size: 24px !important;
 }
 .box3-details ul li{
     padding: 5px;
     color: #FFFFFF;
+    font-size: 16px !important;
+
 }
 .ProjectDetails-box3-first img{
     width: 250px;
@@ -97,13 +104,15 @@ gap: 20px;
 .box3-second-details{
     direction: rtl;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 20px !important;
 }
 .box3-second-details li{
     padding: 5px;
+    font-size: 16px !important;
+
 }
 .box3-second-details p{
-    font-size: 24px;
+    font-size: 24px !important;
 }
 .ProjectDetails-box4{
     display: flex;
@@ -123,6 +132,7 @@ gap: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 20px;
 }
 .ProjectDetails-box4-btns button{
     background-color: #BBE536;
@@ -130,7 +140,7 @@ gap: 20px;
     padding: 10px 30px;
     border: none;
     border-radius: 8px;
-    font-size: 18px;
+    font-size: 18px ;
     cursor: pointer;
     transition: ease-in 0.3s;
 
@@ -151,19 +161,241 @@ background-color: #95c104;
     color: #12151F !important;
 }
 
-.image-container{
+.image-container {
+    position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: flex-end;
     padding: 20px 60px;
-}
-.small-image{
-    width: 100px;
+  }
+  .image-container img{
+    border-radius: 16px;
+  }
+  
+  .small-image {
+    width: 350px;
     height: 269px;
-    z-index: 0;
-}
-.large-image{
-    width: 320px !important;
-    height: 400px !important;
+    position: relative;
     z-index: 1;
-}
+  }
+  
+  .large-image {
+    width: 520px !important;
+    height: 400px !important;
+    position: relative;
+    z-index: 2;
+    margin: 0 -130px; 
+  }
+  
+  .small-image.left {
+    z-index: 1;
+  }
+  
+  .small-image.right {
+    z-index: 3 !important;
+    margin-left: -50px;
+  }
+  @media (max-width: 1024px) {
+    .ProjectDetails-page {
+      padding: 40px 30px;
+    }
+  
+    .ProjectDetails-box1 {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+  
+    .ProjectDetails-box1 img {
+      width: 80%;
+      height: auto;
+    }
+  
+    .ProjectDetails-box1-details {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .ProjectDetails-box1-details img {
+      width: 90px;
+      height: 90px;
+    }
+  
+    .ProjectDetails-box2 {
+      flex-direction: column;
+    }
+  
+    .ProjectDetails-box2 img {
+      width: 85%;
+      height: auto;
+    }
+  
+    .ProjectDetails-box3 {
+      padding: 20px 50px;
+    }
+  
+    .ProjectDetails-box3-first,
+    .ProjectDetails-box3-second {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .ProjectDetails-box3-first img,
+    .ProjectDetails-box3-second img {
+      width: 220px;
+      height: 220px;
+    }
+  
+    .box3-details p,
+    .box3-second-details p {
+      font-size: 20px !important;
+    }
+  
+    .box3-details ul li,
+    .box3-second-details li {
+      font-size: 15px !important;
+    }
+  
+    .ProjectDetails-box4 img,
+    .small-image,
+    .large-image {
+      width: 90% !important;
+      height: auto !important;
+    }
+  
+    .image-container {
+        flex-direction: column;
+        padding: 0;
+      }
+      .ProjectDetails-box4 img,
+      .small-image,
+      .large-image {
+        width: 100% !important;
+        height: auto !important;
+        margin: 0;
+      }
+    .ProjectDetails-box4{
+      padding: 20px 70px;
+    }
+  
+    .ProjectDetails-box4-btns {
+        margin-top: 20px;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .ProjectDetails-box4-btns button {
+      width: 100%;
+      font-size: 18px;
+    }
+  }
+  @media (max-width: 768px) {
+    .ProjectDetails-page {
+      padding: 30px 20px;
+    }
+  
+    .ProjectDetails-box1 {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+      padding: 10px 50px;
+    }
+  
+    .ProjectDetails-box1 img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .ProjectDetails-box1-details {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .ProjectDetails-box1-details img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .ProjectDetails-box2 {
+      flex-direction: column;
+      padding: 0px 40px;
+    }
+  
+    .ProjectDetails-box2 img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .ProjectDetails-box3 {
+      padding: 15px 50px;
+    }
+  .ProjectDetails-box4{
+    padding: 20px 70px;
+  }
+    .ProjectDetails-box3-first,
+    .ProjectDetails-box3-second {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .ProjectDetails-box3-first img,
+    .ProjectDetails-box3-second img {
+      width: 180px;
+      height: 180px;
+    }
+  
+    .box3-details p,
+    .box3-second-details p {
+      font-size: 18px !important;
+    }
+  
+    .box3-details ul li,
+    .box3-second-details li {
+      font-size: 14px !important;
+    }
+  
+    .ProjectDetails-box4 img,
+    .small-image,
+    .large-image {
+      width: 100% !important;
+      height: auto !important;
+      margin: 0;
+    }
+  
+    .image-container {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .ProjectDetails-box4-btns {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .ProjectDetails-box4-btns button {
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 480px){
+    .ProjectDetails-page {
+      padding: 80px 10px;
+    }
+      .ProjectDetails-box1{
+padding: 5px 20px;
+    }
+    .ProjectDetails-box1-paragraph{
+      padding: 10px;
+    }
+    .ProjectDetails-box3{
+      padding: 0px 20px;
+    }
+  }

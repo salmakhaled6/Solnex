@@ -1,0 +1,123 @@
+.Jobs-container {
+    background-color: #12151f;
+    padding: 60px 80px;
+    width: 100%;
+  }
+  .Jobs-container-title h6{
+    width: 100%;
+    text-align: center;
+    font-size: 24px !important;
+    color: #bbe536 ;
+  
+  }
+  .Jobs-container-title p {
+    color: #bbe536 ;
+    font-size: 24px ;
+  }
+  
+  .Jobs-container-para {
+    text-align: center;
+    color: white;
+  
+    font-size: 16px !important;
+    max-width: 100%;
+    display: block;
+    margin-top: 20px;
+  
+  }
+  
+  .Jobs-container-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 29px;
+    padding-top: 30px;
+  }
+  
+  .Jobs-container-card {
+    text-align: right;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.4s ease-in-out;
+    cursor: pointer;
+    -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    -webkit-mask-size: 2300% 100%;
+    mask-size: 2300% 100%;
+    -webkit-animation: ani2 0.7s steps(29) forwards;
+    animation: ani2 0.7s steps(29) forwards;
+  
+  }
+  
+  
+  .Jobs-container-card h3 {
+    text-align: right;
+    bottom: 10px;
+ 
+    color: #a4cc32;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .Jobs-container-card img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+  }
+  
+  .Jobs-container-card p {
+    font-size: 14px !important;
+    text-align: right;
+    color: #ffffff;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  
+  
+  .Jobs-container-card:hover {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .Jobs-container-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 480px) {
+    .Jobs-container {
+      padding: 20px;
+    }
+  
+    .Jobs-container-title h6,
+    .Jobs-container-title p {
+      font-size: 16px !important;
+      text-align: center;
+    }
+  
+    .Jobs-container-para {
+      font-size: 12px !important;
+      padding: 0 10px;
+    }
+  
+    .Jobs-container-cards {
+      grid-template-columns: repeat(2,1fr);
+    }
+  
+    .Jobs-container-card {
+      padding: 15px;
+    }
+  
+    .Jobs-container-card h3 {
+      font-size: 16px;
+    }
+  
+    .Jobs-container-card p {
+      font-size: 12px !important;
+      text-align: right;
+    }
+  }
+  

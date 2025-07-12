@@ -1,0 +1,292 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "El Messiri";
+}
+
+.carousl {
+  position: relative;
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 120px 60px;
+  color: #fafee7;
+  gap: 20px;
+  /* height: 100vh; */
+}
+
+.carousl * {
+  position: relative;
+  z-index: 2;
+}
+
+.carousl-part-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+
+  width: fit-content;
+}
+
+.carousl-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5) contrast(1.2) hue-rotate(100deg);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 0.5s forwards;
+  animation-delay: 0.3s;
+}
+p.slide-in {
+  display: block;
+  height: 50px;
+  overflow: hidden;
+  font-size: 16px !important;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.carousl-part-two svg {
+  width: 100%;
+}
+.expert-box {
+  width: 100%;
+}
+.carousl-part-two {
+  width: 100%;
+}
+
+.experts-big-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.experts {
+  color: #bbe536;
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+  font-weight: 700;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.logo-slider {
+  width: 100%;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 32px;
+  color: #fafee7;
+}
+
+p {
+  font-size: 16px !important;
+  font-weight: 500;
+  line-height: 100%;
+  margin: 10px 0;
+  max-width: 660px;
+  color: #fafee7;
+}
+.conatact-p {
+  color: #fafee7;
+  font-size: 16px;
+  margin-top: 30px;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.heading-wrapper {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.spans {
+  color: #bbe536;
+
+}
+
+.btns-container-2 {
+  position: relative;
+
+padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.5s;
+  letter-spacing: 1px;
+}
+.btns-container-2 button {
+
+  padding: 18px 17px;
+
+  font-size: 18px;
+
+  background-color: #bbe536;
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  color: #12151f;
+  line-height: 100%;
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(22) forwards;
+  animation: ani2 0.7s steps(22) forwards;
+}
+.btns-container-2 button:hover {
+  -webkit-animation: ani 0.7s steps(22) forwards;
+  animation: ani 0.7s steps(22) forwards;
+}
+.btn-mask-2 {
+  border-radius: 8px;
+
+  position: absolute;
+  border: 1px solid #bbe536;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fafee7;
+  padding: 14px 9px;
+
+}
+.unstyled-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+
+@media (max-width: 992px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  p,
+  .conatact-p {
+    font-size: 14px !important;
+  }
+
+
+
+  .experts {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  p,
+  .conatact-p {
+    font-size: 13px !important;
+  }
+
+
+
+  .experts {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  p,
+  .conatact-p {
+    font-size: 12px !important;
+  }
+
+
+  .experts {
+    font-size: 16px;
+  }
+  .btns-container-2 button{
+    padding: 15px 16px;
+    font-size: 12px;
+  }
+  .btn-mask-2{
+padding: 12px 8px;
+font-size: 12px;
+  }
+  
+}
